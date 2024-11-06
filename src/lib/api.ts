@@ -95,7 +95,7 @@ export const getCompany = (id: string, init?: RequestInit) => {
   return sendRequest<Company>(buildUrl('companies', id), init);
 };
 
-export const getPromns = async (
+export const getPromotions = async (
   params: Record<string, string> = {},
   init?: RequestInit,
 ) => {
