@@ -1,5 +1,6 @@
+import React from 'react';
 import { headers } from 'next/headers';
-import AddCompanyButton from './components/AddCompanyButton';
+import AddCompanyButton from './components/add-company-button';
 
 export default function Home() {
   console.log(headers());
