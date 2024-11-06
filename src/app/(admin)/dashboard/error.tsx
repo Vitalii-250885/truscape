@@ -1,6 +1,6 @@
 'use client';
-import React from 'react';
 
+import React from 'react';
 import Button from '@/app/components/button';
 
 export interface ErrorComponentProps {
@@ -8,7 +8,7 @@ export interface ErrorComponentProps {
   reset: () => void;
 }
 
-function ErrorComponent({ error, reset }: ErrorComponentProps) {
+export default function ErrorComponent({ error, reset }: ErrorComponentProps) {
   return (
     <div>
       <p>{`Something went wrong. ${error.message}`}</p>
@@ -16,5 +16,3 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
     </div>
   );
 }
-
-export default ErrorComponent;
